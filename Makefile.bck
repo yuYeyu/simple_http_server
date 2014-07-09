@@ -1,0 +1,18 @@
+OBJS=$(wildcard *.o)
+SRCS=$(OBJS:.o = .c)
+
+all:main
+
+main: $(OBJS)
+	gcc $^ -lpthread -o $@
+
+#main.o:net.h http_proc.h
+#http_proc.o:http_proc.h string_proc.h
+#string_proc.o:string_proc.h
+#net.o:net.h
+##include http net
+
+
+clean:
+	-rm main *.o
+.PHONY : clean

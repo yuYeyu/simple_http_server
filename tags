@@ -1,0 +1,106 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APP	Makefile	/^APP=$(SRC:%.c=%.o)#得到.o文件$/;"	m
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-DHI_DEBUG -g -Wall$/;"	m
+DEFAULT_PATH	src/http/http_proc.h	11;"	d
+EBIN	Makefile	/^EBIN=$(MW_DIR)\/ebin$/;"	m
+HTTP_PROC_H_	src/http/http_proc.h	9;"	d
+LIB	Makefile	/^LIB= -lpthread$/;"	m
+MW_DIR	Makefile	/^MW_DIR=$(PWD)$/;"	m
+NET_H_	src/net/net.h	9;"	d
+RECV_BUFF_LEN	src/net/net.h	11;"	d
+REQUEST_ERROR	src/http/string_proc.h	15;"	d
+REQUEST_GET	src/http/string_proc.h	13;"	d
+REQUEST_POST	src/http/string_proc.h	14;"	d
+SAMDIR	Makefile	/^SAMDIR=$(MW_DIR)\/src$/;"	m
+SEND_BUFF_LEN	src/net/net.h	12;"	d
+SEPARATOR	src/http/string_proc.h	11;"	d
+SRC	Makefile	/^SRC=$(shell find $(SAMDIR) -name '*.c')#子目录的C文件$/;"	m
+STRING_DISTANCE	src/http/string_proc.h	18;"	d
+STR_PROC_H_	src/http/string_proc.h	9;"	d
+THREAD_POOL_H_	src/thread_pool/thread_pool.h	9;"	d
+addr	src/net/net.c	/^	struct sockaddr_in addr;$/;"	m	struct:parameter	typeref:struct:parameter::sockaddr_in	file:	access:public
+analysis_head	src/http/string_proc.c	/^phead_t analysis_head(const char *str)$/;"	f	signature:(const char *str)
+analysis_head	src/http/string_proc.h	/^phead_t analysis_head(const char *str);$/;"	p	signature:(const char *str)
+arg	src/thread_pool/thread_pool.h	/^	void *arg;$/;"	m	struct:threadpool_job	access:public
+cond	src/thread_pool/thread_pool.h	/^	pthread_cond_t cond;$/;"	m	struct:threadpool	access:public
+create_server_net	src/net/net.c	/^int create_server_net(char *strIp, short port, int listen_count)$/;"	f	signature:(char *strIp, short port, int listen_count)
+create_server_net	src/net/net.h	/^int create_server_net(char *strIp, short port, int listen_count);$/;"	p	signature:(char *strIp, short port, int listen_count)
+func	src/net/net.c	/^	int (*func)(char *, int, char *, int);$/;"	m	struct:parameter	file:	access:public
+get_data	src/http/http_proc.c	/^int get_data(const char *path, char *buff, int buff_len)$/;"	f	signature:(const char *path, char *buff, int buff_len)
+get_data	src/http/http_proc.c	/^static int get_data(const char *path, char *buff, int buff_len);$/;"	p	file:	signature:(const char *path, char *buff, int buff_len)
+get_execl_data	src/http/http_proc.c	/^int get_execl_data(const char *path, char *buff, int buff_len)$/;"	f	signature:(const char *path, char *buff, int buff_len)
+get_execl_data	src/http/http_proc.c	/^static int get_execl_data(const char *path, char *buff, int buff_len);$/;"	p	file:	signature:(const char *path, char *buff, int buff_len)
+get_head_sit	src/http/string_proc.c	/^char *get_head_sit(const char *str, int len, int *distance)$/;"	f	signature:(const char *str, int len, int *distance)
+get_head_sit	src/http/string_proc.h	/^char *get_head_sit(const char *str, int len, int *distance);$/;"	p	signature:(const char *str, int len, int *distance)
+get_html_data	src/http/http_proc.c	/^int get_html_data(const char *path, char *buff, int buff_len)$/;"	f	signature:(const char *path, char *buff, int buff_len)
+get_html_data	src/http/http_proc.c	/^static int get_html_data(const char *path, char *buff, int buff_len);$/;"	p	file:	signature:(const char *path, char *buff, int buff_len)
+get_word	src/http/string_proc.c	/^char *get_word(const char *str, char *buff)$/;"	f	signature:(const char *str, char *buff)
+head_t	src/http/string_proc.h	/^typedef struct head_t$/;"	s
+head_t::path	src/http/string_proc.h	/^	char path[256];$/;"	m	struct:head_t	access:public
+head_t::type	src/http/string_proc.h	/^	int type;$/;"	m	struct:head_t	access:public
+head_t::version	src/http/string_proc.h	/^	int version;$/;"	m	struct:head_t	access:public
+http_func	src/http/http_proc.c	/^int http_func(char *recv_buff, int recv_len, char *buff, int buff_len)$/;"	f	signature:(char *recv_buff, int recv_len, char *buff, int buff_len)
+http_func	src/http/http_proc.h	/^int http_func(char *recv_buff, int recv_len, char *buff, int buff_len);$/;"	p	signature:(char *recv_buff, int recv_len, char *buff, int buff_len)
+job_head	src/thread_pool/thread_pool.h	/^	threadpool_job_t *job_head;$/;"	m	struct:threadpool	access:public
+job_tail	src/thread_pool/thread_pool.h	/^	threadpool_job_t *job_tail;$/;"	m	struct:threadpool	access:public
+main	src/main.c	/^int main()$/;"	f
+mutex	src/thread_pool/thread_pool.h	/^	pthread_mutex_t mutex;$/;"	m	struct:threadpool	access:public
+next	src/thread_pool/thread_pool.h	/^	struct threadpool_job *next;$/;"	m	struct:threadpool_job	typeref:struct:threadpool_job::threadpool_job	access:public
+parameter	src/net/net.c	/^typedef struct parameter{$/;"	s	file:
+parameter::addr	src/net/net.c	/^	struct sockaddr_in addr;$/;"	m	struct:parameter	typeref:struct:parameter::sockaddr_in	file:	access:public
+parameter::func	src/net/net.c	/^	int (*func)(char *, int, char *, int);$/;"	m	struct:parameter	file:	access:public
+parameter::sock	src/net/net.c	/^	int sock;$/;"	m	struct:parameter	file:	access:public
+parameter_t	src/net/net.c	/^}parameter_t;$/;"	t	typeref:struct:parameter	file:
+path	src/http/string_proc.h	/^	char path[256];$/;"	m	struct:head_t	access:public
+phead_t	src/http/string_proc.h	/^}phead_t;$/;"	t	typeref:struct:head_t
+pid	src/thread_pool/thread_pool.h	/^	pthread_t *pid;$/;"	m	struct:threadpool	access:public
+queue_mutex	src/thread_pool/thread_pool.h	/^	pthread_mutex_t queue_mutex;$/;"	m	struct:threadpool	access:public
+request_func	src/http/http_proc.c	/^int request_func(phead_t head, char *buff, int buff_len)$/;"	f	signature:(phead_t head, char *buff, int buff_len)
+request_func	src/http/http_proc.c	/^static int request_func(phead_t head, char *buff, int buff_len);$/;"	p	file:	signature:(phead_t head, char *buff, int buff_len)
+request_func	src/net/net.c	/^static void request_func(void *arg);$/;"	p	file:	signature:(void *arg)
+request_func	src/net/net.c	/^void request_func(void *arg)$/;"	f	signature:(void *arg)
+request_type_cmp	src/http/string_proc.c	/^int request_type_cmp(const char *str)$/;"	f	signature:(const char *str)
+routine	src/thread_pool/thread_pool.h	/^	void (*routine)(void *);$/;"	m	struct:threadpool_job	access:public
+server_sock	src/net/net.c	/^int server_sock = -1;$/;"	v
+sock	src/net/net.c	/^	int sock;$/;"	m	struct:parameter	file:	access:public
+strat_accept_request	src/net/net.c	/^int strat_accept_request(int (*proc_func)(char *, int, char *, int))$/;"	f	signature:(int (*proc_func)(char *, int, char *, int))
+strat_accept_request	src/net/net.h	/^int strat_accept_request(int (*proc_func)(char *, int, char *, int));$/;"	p	signature:(int (*proc_func)(char *, int, char *, int))
+thread_num	src/thread_pool/thread_pool.h	/^	int thread_num;$/;"	m	struct:threadpool	access:public
+thread_work_num	src/thread_pool/thread_pool.h	/^	int thread_work_num;$/;"	m	struct:threadpool	access:public
+threadpool	src/thread_pool/thread_pool.h	/^typedef struct threadpool$/;"	s
+threadpool::cond	src/thread_pool/thread_pool.h	/^	pthread_cond_t cond;$/;"	m	struct:threadpool	access:public
+threadpool::job_head	src/thread_pool/thread_pool.h	/^	threadpool_job_t *job_head;$/;"	m	struct:threadpool	access:public
+threadpool::job_tail	src/thread_pool/thread_pool.h	/^	threadpool_job_t *job_tail;$/;"	m	struct:threadpool	access:public
+threadpool::mutex	src/thread_pool/thread_pool.h	/^	pthread_mutex_t mutex;$/;"	m	struct:threadpool	access:public
+threadpool::pid	src/thread_pool/thread_pool.h	/^	pthread_t *pid;$/;"	m	struct:threadpool	access:public
+threadpool::queue_mutex	src/thread_pool/thread_pool.h	/^	pthread_mutex_t queue_mutex;$/;"	m	struct:threadpool	access:public
+threadpool::thread_num	src/thread_pool/thread_pool.h	/^	int thread_num;$/;"	m	struct:threadpool	access:public
+threadpool::thread_work_num	src/thread_pool/thread_pool.h	/^	int thread_work_num;$/;"	m	struct:threadpool	access:public
+threadpool::threadpool_state	src/thread_pool/thread_pool.h	/^	int threadpool_state;$/;"	m	struct:threadpool	access:public
+threadpool_create	src/thread_pool/thread_pool.c	/^threadpool_t *threadpool_create(int thread_num)$/;"	f	signature:(int thread_num)
+threadpool_create	src/thread_pool/thread_pool.h	/^threadpool_t *threadpool_create(int thread_num);$/;"	p	signature:(int thread_num)
+threadpool_distroy	src/thread_pool/thread_pool.c	/^void threadpool_distroy(threadpool_t *tp)$/;"	f	signature:(threadpool_t *tp)
+threadpool_distroy	src/thread_pool/thread_pool.h	/^void threadpool_distroy(threadpool_t *tp);$/;"	p	signature:(threadpool_t *tp)
+threadpool_init	src/thread_pool/thread_pool.c	/^void threadpool_init(threadpool_t *tp)$/;"	f	signature:(threadpool_t *tp)
+threadpool_init	src/thread_pool/thread_pool.h	/^void threadpool_init(threadpool_t *tp);$/;"	p	signature:(threadpool_t *tp)
+threadpool_job	src/thread_pool/thread_pool.h	/^typedef struct threadpool_job$/;"	s
+threadpool_job::arg	src/thread_pool/thread_pool.h	/^	void *arg;$/;"	m	struct:threadpool_job	access:public
+threadpool_job::next	src/thread_pool/thread_pool.h	/^	struct threadpool_job *next;$/;"	m	struct:threadpool_job	typeref:struct:threadpool_job::threadpool_job	access:public
+threadpool_job::routine	src/thread_pool/thread_pool.h	/^	void (*routine)(void *);$/;"	m	struct:threadpool_job	access:public
+threadpool_job_t	src/thread_pool/thread_pool.h	/^}threadpool_job_t;$/;"	t	typeref:struct:threadpool_job
+threadpool_pop_job	src/thread_pool/thread_pool.c	/^threadpool_job_t *threadpool_pop_job(threadpool_t *tp)$/;"	f	signature:(threadpool_t *tp)
+threadpool_pop_job	src/thread_pool/thread_pool.h	/^threadpool_job_t *threadpool_pop_job(threadpool_t *tp);$/;"	p	signature:(threadpool_t *tp)
+threadpool_push_job	src/thread_pool/thread_pool.c	/^void threadpool_push_job(threadpool_t *tp, threadpool_job_t *job)$/;"	f	signature:(threadpool_t *tp, threadpool_job_t *job)
+threadpool_push_job	src/thread_pool/thread_pool.h	/^void threadpool_push_job(threadpool_t *tp, threadpool_job_t *job);$/;"	p	signature:(threadpool_t *tp, threadpool_job_t *job)
+threadpool_state	src/thread_pool/thread_pool.h	/^	int threadpool_state;$/;"	m	struct:threadpool	access:public
+threadpool_t	src/thread_pool/thread_pool.h	/^}threadpool_t;$/;"	t	typeref:struct:threadpool
+threadpool_work_thread	src/thread_pool/thread_pool.c	/^void *threadpool_work_thread(void *tp)$/;"	f	signature:(void *tp)
+threadpool_work_thread	src/thread_pool/thread_pool.h	/^void *threadpool_work_thread(void *tp);$/;"	p	signature:(void *tp)
+type	src/http/string_proc.h	/^	int type;$/;"	m	struct:head_t	access:public
+version	src/http/string_proc.h	/^	int version;$/;"	m	struct:head_t	access:public
